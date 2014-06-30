@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jQuery Assignment 2 - Basics 2</title>
+		<meta name="description" content="jQuery Assignment - 06/30/14 - Basics 2">
+		<link rel="stylesheet" type="text/css" href="css.css">
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$('img').click(function(){
+					$(this).hide();
+				});
+				$('#reset').click(function(){
+					$('img').show();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="wrapper">
+			<h1>Disappearing Ninja</h1>
+			<img src="ninja.png" alt="ninja" class="cell r1 c1">
+			<img src="ninja.png" alt="ninja" class="cell r1 c2">
+			<img src="ninja.png" alt="ninja" class="cell r1 c3">
+			<img src="ninja.png" alt="ninja" class="cell r1 c4">
+			<img src="ninja.png" alt="ninja" class="cell r2 c1">
+			<img src="ninja.png" alt="ninja" class="cell r2 c2">
+			<img src="ninja.png" alt="ninja" class="cell r2 c3">
+			<img src="ninja.png" alt="ninja" class="cell r2 c4">
+			<img src="ninja.png" alt="ninja" class="cell r3 c1">
+			<img src="ninja.png" alt="ninja" class="cell r3 c2">
+			<img src="ninja.png" alt="ninja" class="cell r3 c3">
+			<img src="ninja.png" alt="ninja" class="cell r3 c4">
+			<img src="ninja.png" alt="ninja" class="cell r4 c1">
+			<img src="ninja.png" alt="ninja" class="cell r4 c2">
+			<img src="ninja.png" alt="ninja" class="cell r4 c3">
+			<img src="ninja.png" alt="ninja" class="cell r4 c4">
+			<button id="reset" class="r1 c5">Reset Images</button>
+		</div><!-- wrapper -->
+	</body>
+</html>
